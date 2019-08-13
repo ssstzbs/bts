@@ -10,4 +10,10 @@ public class LoginResult {
 	public void setCode(String code) {
 		this.code = code;
 	}
+
+	@Override
+	public String toString() {
+		return "LoginResult [code=" + code + "]";
+	}
+		
 }
