@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d][%p,%c{1}] %m%n" />
+		</layout>
+	</appender>
+	<appender name="CONSOLEASYNC" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="512" />
+		<appender-ref ref="CONSOLE" />
+	</appender>
+
+
+	<appender name="FileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="${log4jLogpath}" />
+		<param name="Threshold" value="ALL" />
+		<param name="MaxFileSize" value="100000KB" />
+		<param name="MaxBackupIndex" value="10000" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss} %p][%c]%m%n" />
+		</layout>
+	</appender>
+	<appender name="FileAppenderASYNC" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="512" />
+		<appender-ref ref="FileAppender" />
+	</appender>
+
+
+
+
+
+	<appender name="BackFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="${backLog}" />
+		<param name="Threshold" value="ALL" />
+		<param name="MaxFileSize" value="1024000KB" />
+		<param name="MaxBackupIndex" value="10000" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss} %p][%c]%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="BackFileAppenderASYNC" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="512" />
+		<appender-ref ref="BackFileAppender" />
+	</appender>
+
+	<logger name="com.gyyx.dragon.mrg.LogMrg" additivity="false">
+		<level value="info" />
+		<appender-ref ref="BackFileAppender" />
+	</logger>
+
+	<root>
+		<level value="info" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FileAppender" />
+		<!-- <appender-ref ref="BackFileAppender" /> -->
+	</root>
+</log4j:configuration>
+
