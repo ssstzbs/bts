@@ -3,7 +3,8 @@ package cn.gyyx.bts.auth.json;
 public class LoginResult {
 	private String code;
 	private String Id;
-   // test
+    private int gold;
+	
 	public String getCode() {
 		return code;
 	}
@@ -20,9 +21,17 @@ public class LoginResult {
 		Id = id;
 	}
 
+	public int getGold() {
+		return gold;
+	}
+
+	public void setGold(int gold) {
+		this.gold = gold;
+	}
+
 	@Override
 	public String toString() {
-		return "LoginResult [code=" + code + ", Id=" + Id + "]";
+		return "LoginResult [code=" + code + ", Id=" + Id + ", gold=" + gold + "]";
 	}
-	
+
 }
