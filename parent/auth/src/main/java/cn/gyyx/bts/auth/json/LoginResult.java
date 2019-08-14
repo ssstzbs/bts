@@ -3,7 +3,7 @@ package cn.gyyx.bts.auth.json;
 public class LoginResult {
 	private String code;
 	private String Id;
-
+   // test
 	public String getCode() {
 		return code;
 	}
