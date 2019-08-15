@@ -14,5 +14,6 @@ public class AuthCtrl {
 		loginResultb.setCode("111");
 		loginResultb.setLevel(43343);
 		loginResultb.setSilver(2323);
+		loginResultb.setGold(3);
 	}
 }

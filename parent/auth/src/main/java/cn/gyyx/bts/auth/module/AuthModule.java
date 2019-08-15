@@ -22,8 +22,10 @@ public class AuthModule extends CoreModule {
 	}
 	
 	private void test(){
-		LoginResultc loginResultc=new LoginResultc();
-		loginResultc.setId("123");
-		loginResultc.setCode("1");
-	}
+		loginResultb = new LoginResultb();
+		loginResultb.setCode("111");
+		loginResultb.setLevel(43343);
+		loginResultb.setSilver(2323);
+		loginResultb.setGold(3);
+}
 }
