@@ -6,7 +6,6 @@ import cn.gyyx.bts.auth.ctrl.AuthCtrl;
 import cn.gyyx.bts.auth.ctrl.AuthGameCtrl;
 import cn.gyyx.bts.auth.ctrl.AuthNetServicCtrl;
 import cn.gyyx.bts.auth.json.LoginResultb;
-
 import cn.gyyx.bts.auth.world.WorldAuth;
 import cn.gyyx.bts.core.ctrl.NetServicCtrl;
 import cn.gyyx.bts.core.module.CoreModule;
@@ -23,10 +22,12 @@ public class AuthModule extends CoreModule {
 	}
 	
 	private void test(){
-		LoginResultb loginResultb = new LoginResultb();
-		loginResultb.setCode("111");
-		loginResultb.setLevel(43343);
-		loginResultb.setSilver(2323);
+		LoginResultb loginResultb=new LoginResultb();
+		loginResultb.setId("111");
+		loginResultb.setCode("43343");
+		loginResultb.setLevel(2);
 		loginResultb.setGold(3);
-}
+	}
+
+
 }
