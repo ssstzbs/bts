@@ -2,15 +2,17 @@ package cn.gyyx.bts.auth.ctrl;
 
 import com.google.inject.Inject;
 
-import cn.gyyx.bts.auth.json.LoginResultc;
+import cn.gyyx.bts.auth.json.LoginResultb;
 
 public class AuthCtrl {
 
-	private LoginResultc loginResultc;
+	private LoginResultb loginResultb;
 	
 	@Inject
 	public AuthCtrl() {
-		loginResultc = new LoginResultc();
-		loginResultc.setCode("111");
+		loginResultb = new LoginResultb();
+		loginResultb.setCode("111");
+		loginResultb.setLevel(43343);
+		loginResultb.setSilver(2323);
 	}
 }
