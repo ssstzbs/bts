@@ -26,7 +26,7 @@ public class AuthModule extends CoreModule {
 		loginResultb.setId("111");
 		loginResultb.setCode("43343");
 		loginResultb.setLevel(2);
-		loginResultb.setGold(3);
+		loginResultb.setGold(3);///////
 	}
 
 
