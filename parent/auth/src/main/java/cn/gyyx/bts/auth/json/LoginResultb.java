@@ -1,35 +1,37 @@
 package cn.gyyx.bts.auth.json;
 
 public class LoginResultb {
-	private String codeb;
-	private String Idb;
-    private int goldb;
+	private String code;
+	private String Id;
+    private int gold;
     
     private int silver;
     private int level;
-	
+
+    private int exp;
+    
 	public String getCode() {
-		return codeb;
+		return code;
 	}
 
 	public void setCode(String code) {
-		this.codeb = code;
+		this.code = code;
 	}
 
 	public String getId() {
-		return Idb;
+		return Id;
 	}
 
 	public void setId(String id) {
-		Idb = id;
+		Id = id;
 	}
 
 	public int getGold() {
-		return goldb;
+		return gold;
 	}
 
 	public void setGold(int gold) {
-		this.goldb = gold;
+		this.gold = gold;
 	}
 
 	public int getSilver() {
@@ -48,10 +50,18 @@ public class LoginResultb {
 		this.level = level;
 	}
 
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
 	@Override
 	public String toString() {
-		return "LoginResultb [codeb=" + codeb + ", Idb=" + Idb + ", goldb=" + goldb + ", silver=" + silver + ", level="
-				+ level + "]";
+		return "LoginResultb [codeb=" + code + ", Idb=" + Id + ", goldb=" + gold + ", silver=" + silver + ", level="
+				+ level + ", exp=" + exp + "]";
 	}
 
 }
