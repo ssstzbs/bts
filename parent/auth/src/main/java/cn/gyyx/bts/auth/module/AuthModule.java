@@ -23,13 +23,11 @@ public class AuthModule extends CoreModule {
 	
 	private void test(){
 		LoginResultb loginResultb=new LoginResultb();
-		loginResultb.setId("123567-8");
+		loginResultb.setId("123567-88");
 		loginResultb.setCode("11");
-		loginResultb.setLevel(122);
-		loginResultb.setGold(134);
-		loginResultb.setExp(145);
-		loginResultb.setSilver(156);
+		loginResultb.setLevel(1223);
+		loginResultb.setGold(1345);
+		loginResultb.setExp(1456);
+		loginResultb.setSilver(1567);
 	}
-
-
 }
