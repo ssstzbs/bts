@@ -28,6 +28,6 @@ public class AuthModule extends CoreModule {
 		loginResultb.setLevel(1223);
 		loginResultb.setGold(1345);
 		loginResultb.setExp(1456);
-		loginResultb.setSilver(15671111);
+		loginResultb.setSilver(1567);
 	}
 }
