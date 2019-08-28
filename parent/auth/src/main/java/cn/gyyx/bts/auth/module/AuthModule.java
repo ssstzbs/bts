@@ -29,5 +29,10 @@ public class AuthModule extends CoreModule {
 		loginResultb.setGold(1345);
 		loginResultb.setExp(1456);
 		loginResultb.setSilver(1567);
+		
+		//commit 1
+		//
+		//
+		//
 	}
 }
